@@ -1,0 +1,65 @@
+*{
+  margin;04
+  padding: 0;
+  box-sizing:0;
+
+}
+.root{
+
+  --O-color:rgba(156, 7, 44, 0.603);
+  --X-color:rgb(87, 87, 177);
+
+}
+.celula{
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: bold;
+  color:black;
+
+  cursor: pointer;
+
+}
+
+.celula.X {
+  background-color: var rgb(87, 87, 177);
+}
+  .celula.O {
+  background-color: var rgba(156, 7, 44, 0.603);
+}
+
+.celula.O,.celula.X{
+  cursor: not-allowed;
+}
+
+.celular:not(.O):not(X):hover{
+  box-shadow: O 20px 25px -5px rgba(0,0,0,0.1),O 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+
+.title{
+  text-align: center;
+  font-size: 3rem;
+  color:#555;
+  margin-bottom: 2rem;
+}
+
+.borda{
+  display: grid;
+  grid-template-columns: repeat(3,240px);
+  grid-template-rows: repeat(3200px);
+  gap: 1rem;
+}
+body{
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: rgb(194, 185, 185);
+}
+
+
